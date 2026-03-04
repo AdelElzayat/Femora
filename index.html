@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Femora</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="64x64"
+      href="img/Feminine elegance with a pink rose.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navdiv">
+        <div class="logo">
+          <a href="/index.html"
+            ><img
+              src="img/Femora_logo_with_pink_rose-removebg-preview.png"
+              alt="logo"
+          /></a>
+        </div>
+        <ul>
+          <button class="login"><a href="login-form.html">Login</a></button>
+          <button class="register">
+            <a href="login-form.html?mode=register">Register</a>
+          </button>
+        </ul>
+      </div>
+    </div>
+
+    <section>
+      <div class="search-container">
+        <div class="select">
+          <div
+            class="selected"
+            data-default="Search By Product Name"
+            data-one="Search By Category"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 512 512"
+              class="arrow"
+            >
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="options">
+            <div title="all">
+              <input id="all" name="option" type="radio" checked="" />
+              <label
+                class="option"
+                for="all"
+                data-txt="Search By Product Name"
+              ></label>
+            </div>
+            <div title="option-1">
+              <input id="option-1" name="option" type="radio" />
+              <label
+                class="option"
+                for="option-1"
+                data-txt="Search By Category"
+              ></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="group">
+          <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+            <g>
+              <path
+                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+              ></path>
+            </g>
+          </svg>
+          <input placeholder="Search..." type="search" class="input" />
+        </div>
+        <button class="btn">Search</button>
+      </div>
+
+      <div class="cards">
+        <div class="item">
+          <img src="img/Margot Robbie stars .png" alt="" class="item-img" />
+          <h3 class="item-name">Chanel Parfum</h3>
+          <p class="item-price">Price: $163</p>
+          <p class="item-category">Category: Perfume</p>
+          <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+            <div class="svg-container">
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-outline"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-filled"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                ></path>
+              </svg>
+              <svg
+                class="svg-celebrate"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+              </svg>
+            </div>
+          </div>
+          <button class="button2">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img src="img/Perfume J'Adore Dior.png" alt="" class="item-img" />
+          <h3 class="item-name">Dior Parfum</h3>
+          <p class="item-price">Price: $145</p>
+          <p class="item-category">Category: Perfume</p>
+          <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+            <div class="svg-container">
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-outline"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-filled"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                ></path>
+              </svg>
+              <svg
+                class="svg-celebrate"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+              </svg>
+            </div>
+          </div>
+          <button class="button2">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img src="img/Gucci Bloom perfume.png" alt="" class="item-img" />
+          <h3 class="item-name">Gucci Parfum</h3>
+          <p class="item-price">Price: $92</p>
+          <p class="item-category">Category: Perfume</p>
+          <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+            <div class="svg-container">
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-outline"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-filled"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                ></path>
+              </svg>
+              <svg
+                class="svg-celebrate"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+              </svg>
+            </div>
+          </div>
+          <button class="button2">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img src="img/Michael Kors Jet Set.png" alt="" class="item-img" />
+          <h3 class="item-name">Michael Kors Jet Set</h3>
+          <p class="item-price">Price: $229.50</p>
+          <p class="item-category">Category: Women's Bag</p>
+          <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+            <div class="svg-container">
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-outline"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-filled"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                ></path>
+              </svg>
+              <svg
+                class="svg-celebrate"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+              </svg>
+            </div>
+          </div>
+          <button class="button2">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img src="img/Black Prada Re-Editi.png" alt="" class="item-img" />
+          <h3 class="item-name">Prada Re-Edition Nylon Bag</h3>
+          <p class="item-price">Price: $2,650</p>
+          <p class="item-category">Category: Luxury Bag</p>
+          <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+            <div class="svg-container">
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-outline"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-filled"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                ></path>
+              </svg>
+              <svg
+                class="svg-celebrate"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+              </svg>
+            </div>
+          </div>
+          <button class="button2">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img src="img/SATIN DRESS-View all.png" alt="" class="item-img" />
+          <h3 class="item-name">ZARA Satin Slip Dress</h3>
+          <p class="item-price">Price: $89.95</p>
+          <p class="item-category">Category: Women's Clothing</p>
+          <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+            <div class="svg-container">
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-outline"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-filled"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                ></path>
+              </svg>
+              <svg
+                class="svg-celebrate"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+              </svg>
+            </div>
+          </div>
+          <button class="button2">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img src="img/Huda Beauty Nude Eye.png" alt="" class="item-img" />
+          <h3 class="item-name">Huda Beauty Nude Palette</h3>
+          <p class="item-price">Price: $35.50</p>
+          <p class="item-category">Category: Makeup</p>
+          <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+            <div class="svg-container">
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-outline"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-filled"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                ></path>
+              </svg>
+              <svg
+                class="svg-celebrate"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+              </svg>
+            </div>
+          </div>
+          <button class="button2">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img src="img/The Dyson Airwrap™ f.png" alt="" class="item-img" />
+          <h3 class="item-name">Dyson Airwrap Multi-Styler</h3>
+          <p class="item-price">Price: $739</p>
+          <p class="item-category">Category: Hair Styling Tool</p>
+          <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+            <div class="svg-container">
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-outline"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-filled"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                ></path>
+              </svg>
+              <svg
+                class="svg-celebrate"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+              </svg>
+            </div>
+          </div>
+          <button class="button2">Add to Cart</button>
+        </div>
+        <div class="item">
+          <img src="img/Pandora Moments Spar.png" alt="" class="item-img" />
+          <h3 class="item-name">Pandora Chain Bracelet</h3>
+          <p class="item-price">Price: $79.95</p>
+          <p class="item-category">Category: Jewelry</p>
+          <div class="heart-container" title="Like">
+            <input type="checkbox" class="checkbox" id="Give-It-An-Id" />
+            <div class="svg-container">
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-outline"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Zm-3.585,18.4a2.973,2.973,0,0,1-3.83,0C4.947,16.006,2,11.87,2,8.967a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,8.967a1,1,0,0,0,2,0,4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,8.967C22,11.87,19.053,16.006,13.915,20.313Z"
+                ></path>
+              </svg>
+              <svg
+                viewBox="0 0 24 24"
+                class="svg-filled"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.5,1.917a6.4,6.4,0,0,0-5.5,3.3,6.4,6.4,0,0,0-5.5-3.3A6.8,6.8,0,0,0,0,8.967c0,4.547,4.786,9.513,8.8,12.88a4.974,4.974,0,0,0,6.4,0C19.214,18.48,24,13.514,24,8.967A6.8,6.8,0,0,0,17.5,1.917Z"
+                ></path>
+              </svg>
+              <svg
+                class="svg-celebrate"
+                width="100"
+                height="100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <polygon points="10,10 20,20"></polygon>
+                <polygon points="10,50 20,50"></polygon>
+                <polygon points="20,80 30,70"></polygon>
+                <polygon points="90,10 80,20"></polygon>
+                <polygon points="90,50 80,50"></polygon>
+                <polygon points="80,80 70,70"></polygon>
+              </svg>
+            </div>
+          </div>
+          <button class="button2">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h4>Femora</h4>
+          <p class="tagline">Elegant. Feminine. Modern Luxury.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <span class="divider">•</span>
+          <a href="#">Terms & Conditions</a>
+          <span class="divider">•</span>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="Pinterest"
+            ><i class="fa-brands fa-pinterest"></i
+          ></a>
+          <a href="#" aria-label="Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; Femora. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
